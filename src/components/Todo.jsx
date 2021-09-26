@@ -7,7 +7,7 @@ export function Todo({ item, toggle }) {
             <label className="inline-flex items-center mr-4">
                 <input className="form-checkbox" type="checkbox" onChange={onChange} checked={item.completed} />
             </label>
-            <p className={`w-full text-3xl ${item.completed ? 'line-through' : ''} text-green`}>{item.title}</p>
+            <p className={`w-full text-3xl ${item.completed ? 'line-through text-green-500' : 'text-black'}`}>{item.title}</p>
         </div>
     )
 }
