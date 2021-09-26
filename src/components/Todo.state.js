@@ -3,7 +3,11 @@ import { createStore } from "solid-js/store";
 export const useStore = () => {
     const [state, setState] = createStore({
         value: '',
-        todos: []
+        todos: [
+            {
+                title: 'Sample', completed: false
+            }
+        ]
     });
 
     const addTodo = () => {
